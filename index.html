@@ -28,7 +28,7 @@
   /* Set up the initial map center and zoom level */
   var map = L.map('map', {
     center: [41.77, -72.69], // EDIT coordinates to re-center map
-    zoom: 8,  // EDIT from 1 (zoomed out) to 18 (zoomed in)
+    zoom: 10,  // EDIT from 1 (zoomed out) to 18 (zoomed in)
     scrollWheelZoom: false
   });
 
@@ -41,8 +41,13 @@
   }).addTo(map);
 
   /* Display a point marker with pop-up text */
-  L.marker([41.77, -72.69]).addTo(map) // EDIT marker coordinates
-  .bindPopup("Insert pop-up text here"); // EDIT pop-up text message
+     /* Display a point marker with pop-up text */
+  L.marker([41.749224749354035, -72.6903241716405]).addTo(map) // EDIT marker coordinates
+  .bindPopup("Trinity College"); // EDIT pop-up text message /* Display a point marker with pop-up text */
+  L.marker([[41.3163, -72.9220]]).addTo(map) // EDIT marker coordinates
+  .bindPopup("Yale University"); // EDIT pop-up text message /* Display a point marker with pop-up text */
+  L.marker([41.5587, -72.6506]).addTo(map) // EDIT marker coordinates
+  .bindPopup("Wesleyan College"); // EDIT pop-up text message
 
   </script>
 </body>
